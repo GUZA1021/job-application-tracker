@@ -15,3 +15,18 @@ A fullstack web application for tracking job applications.
 - Node.js / Express
 - PostgreSQL
 - Docker
+
+
+## Current progress
+
+This project is a job application tracker.
+
+Backend:
+- Express API with CRUD routes
+- Input validation
+- Routes, services and validators structure
+
+Frontend:
+- React application list
+- Add test application
+- Delete application from state
