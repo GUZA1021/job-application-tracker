@@ -1,18 +1,19 @@
-const express = require("express"); // gets the express-library, so we can make a server
+const express = require("express");
+const cors = require("cors");
 
-const applicationsRouter = require("./routes/applications.routes"); // imports the application routes
+const applicationsRouter = require("./routes/applications.routes");
 
-const app = express(); // makes the backend app
+const app = express();
 
-app.use(express.json()); // backend is allowed to read JSON-data from the request body
+app.use(cors());
+app.use(express.json());
 
-app.get("/", (req, res) => { // request and response
+app.get("/", (req, res) => {
   res.send("Backend is running");
 });
 
-app.use("/applications", applicationsRouter); 
-// all routes inside applications.routes.js now start with /applications
+app.use("/applications", applicationsRouter);
 
-app.listen(3000, () => { // starts the server on port 3000
+app.listen(3000, () => {
   console.log("Server is running on http://localhost:3000");
 });

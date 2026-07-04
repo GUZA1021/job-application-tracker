@@ -1,32 +1,58 @@
 # Job Application Tracker
 
-A fullstack web application for tracking job applications.
+A simple full-stack web application for tracking job applications.
 
-## Features planned
-- Add job applications
-- Track status: Applied, Interview, Rejected, Offer
-- Add notes
-- Filter applications
-- User login
-- Dashboard with statistics
+The project currently consists of a React frontend and a backend API. The frontend and backend are connected, so job applications can be fetched, added, and deleted through the backend.
 
-## Tech stack
-- React + TypeScript
-- Node.js / Express
-- PostgreSQL
-- Docker
+## Features
 
+* View a list of job applications
+* Add a new job application
+* Delete job applications
+* Frontend connected to backend API
+* Application data is currently stored in local memory on the backend
 
-## Current progress
+## Tech Stack
 
-This project is a job application tracker.
+### Frontend
+* React
+* JavaScript
+* Vite
 
-Backend:
-- Express API with CRUD routes
-- Input validation
-- Routes, services and validators structure
+### Backend
 
-Frontend:
-- React application list
-- Add test application
-- Delete application from state
+* Node.js
+* Express.js
+
+## Current Status
+Frontend and Backend can communnicate with each other, but everything is stored in local memory. A real database is yet to be implemented
+
+## Planned Improvements
+
+* Add a real database
+* Create a form for adding custom job applications
+* Add edit/update functionality
+* Improve styling and layout
+* Statistics
+
+## How to Run the Project
+
+### Backend
+
+```bash
+cd backend
+npm install
+npm run dev
+```
+
+### Frontend
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+## Notes
+
+This project is still in development and is mainly built to practice full-stack development, API communication, and real-world software development skills.
